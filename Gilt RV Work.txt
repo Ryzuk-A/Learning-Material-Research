@@ -1,0 +1,28 @@
+Gilt RV Work
+
+creating an RV framework/model - 
+
+Taking the market yield curve against a par curve i.e with every bond priced at par so yield = coupon then we need to smooth out this curve using either a parametric form (NS/NSS) or a spline (B-Spline/Cubic Spline) - Likely better to use spline for this.
+
+Note that the use of a spline isn't to interpolate like when bootstrapping the discount curve in swaps pricing but rather to fit an average across each gilt.
+
+then we do Error = Yield_Market - Yield_Par, Z-score this error term, JPM uses a 3M rolling mean and STD but can play around with this depending on the past performance and macro conditions of the UK Gilt Market. Likely in 2026 with the political turbulence, 3M to 6M seems feasible.
+
+this Z-score is our measure of richness/cheapness of a bond relative to it's par value 
+
+Likely just display this on a bar chart with Z scores on y-axis and individual bonds on x-axis
+
+Adjacent Fly Score -
+
+We can use this signal as a measure of richness/cheapness  
+
+fly = 2·y_i − y_{i−1} − y_{i+1} e.g. checking RV of 2y relative to it's neighbours fly>0 signals 2y cheap, fly<0 signals 2y expensive
+
+Then Z-score the fly again choice of rolling window for Mean an STD follows the same logic (e.g 3M or 6M)
+
+*Learning note - 50:50 fly is just putting 50% weighting on each wing and then 100% on belly
+whereas level-neutral fly is just a DV01 neutral fly
+
+then to analyse this we can look at carry and roll of the fly if price action stays flat and also regress fly on yields in levels to se iif geuine RV if highly correlated with level then less likely RV. Look at the residual of this regression will signal how much RV there is in there i.e part not explained by level
+
+

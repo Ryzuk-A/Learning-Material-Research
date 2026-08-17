@@ -1,0 +1,79 @@
+XCCY Trade Ideas
+
+Month-end flows i.e. funds paying off dollar-denominated obligations increased demand for USD funding drives basis wider - can we statistically test for this pattern/trend and is it possible to pre-position ourselves for the widening of basis if not already priced in?
+
+Are these localised to short-end basis and could these moves potentially be over-exaggerated and expect some level of mean reversion?
+
+XVA and XCCY basis relationship this would theoretically be positive i.e. wider basis higher XVA costs can we do some sort of z score when this relationship diverges i.e. cointegrating relationship z score error term and use this as a signal wide basis but low XVA cost would very much like to lend USD in this case vice versa holds for positive base (borrow USD)
+
+Construct a fair value of basis based on funding-stress factors i.e. CDS index levels broad xccy basis averaged across tenors and currency may be able to indicate if current market basis should mean-revert to some level
+
+CDS Indicies quantify risk tones in US EUR markets etc so could be a useful forecasting value - Typically would observe risk-off flight to quality tone results in winder (more negative) basis, however has this correlation broken down on the debasement trade?
+
+and VIX too but less specific
+
+Another Trade Strategy -
+
+Forecast global common PC1 factor using dxy credit spreads vix etc (check correlations with PC1 first) then use that forecasted PC1 to forecast basis movements and trade around the residual using z scores as a signal trade mean reversion of the residual -  look at claude
+
+regression 1 finds what drives PC1 → take those significant drivers → regression 2 puts them on a specific basis.?? one way to trade the residual on regression 2
+***
+
+PC1 - Global basis drivers affecting all currency pairs - Global risk sentiment mainly a global dollar funding factor e.g. IR Differential vs dollar, relative divergence vs Fed Balance Sheet, lastly risk sentiment so VIX and CDX indices for example
+
+PC2 - Idiosyncratic factors that differentiate currency pairs e.g. regional-specific issuance or FED vs BOE differential
+
+Hedge out PC1 and trade RV through PC2 i.e. long basis short another to get market neutral basis trade we need to hedge out PC1
+
+***
+basis_t = α + β·PC1_t + ε_t -  Or could do this 
+
+Unrelated Ideas:
+
+Could we create a dynamic table to see what is currently cheaper to issue in i.e. predict cross-border flows so adjusting for all cost rate differentials etc 
+
+Include ADJ. in basis between two countries different credit spreads for each respective country and also the basis and IR to see what is cheaper to issue - see book for better explanation on this
+
+Include comparison between USD (home) and EUR (foreign) include credit spreads for both then on EUR we have conversion factor and basis
+
+From BNP Primer may we find that in time of funding crisis short-term funding needs through fx swaps may leak into longer term needs through xccy i.e could we observe that movement in fx swaps granger causes moves in xccy - Ask Nicole
+
+- Building on this could we display G3 CB balance sheets to show constrained or excess liquidity - could be a useful variable in determining future directions for basis see JP Primer
+
+
+Useful Guide to expressin trade ideas - 
+
+All about looking at relationships and seeing what driver the 'fair value' of basis e.g. IR differntials balance sheet etc. An interesting path is looking at cross-country basis e.g. as in JP Primer SONIA/SOFR Basis had 77% R2 against ESTR/SOFR basis and look relativley dislocated ompared to what the relationship says it should be residual < 0. IR differential SONIA - SOFR as regressor showed it should be at fair value 
+
+**KEY: The cross pair factor (EUR Basis) is exactly the PC2 methodology suggested above
+
+Trade Ideas -
+
+**To support trade ideas we can regress basis against it's fundamental drivers to see where current basis aligns with a 'fair value'
+
+**Dollar Fade do we like paying basis specifically against GBP or Euro?**
+
+is 'rebasement' trade overcrowded trying to squeeze the positive carry of the dollar
+
+risks - more issuance in dollar due to a sense of stability coming back to US assets and having higher yielding assets against the euro specifically (large IR differential)
+
+USD in general -
+
+Hikes are way overpriced IV in options market skewed toward 6 hikes as a tail as opposed to one cut massivley skewed left would require a 50bp hike 30% july hike (likely gone down tho) - lack of forward guidance has made markets more speculative and sensitive to data releases
+
+Even Sep and Dec seem  too overpriced for a Fed that was on a cutting cycle pre supply shock, though Warsh notably has a more hawkish lean as seen in speeches 
+
+Labour market cooled early this month and second-order effects of inflation are unlikely to pass through to food prices etc given oil has fallen to 70 a barrel realtivley quick hence inflation is expected to fall breakeven rates still somewhat elevated compared to where brent is - potentially still pricing in a risk premia of uncertainity in straight of Hormuz
+
+GBP/USD
+
+if we hold the view of Burnham respecting the fiscal rules and maintaing credibility of the govenrment then we can expecect cable basis to tighten 
+
+EUR/USD pay Basis View
+
+ECB looking significantly more hawkish than the fed, i.e. highly determined to reach their 2% inflation target, argubaly their economy is more sensitive to changes in oil prices given the reliance on importation. Rather hawkish sentiment amongst those on the committe and rates are relativley still low compared to historically so gives leway for an 'insurance cut' - only risk to this is Europe has been prone to disinflationary pressures due to weak growth so another hike could reignite this if oil prices stay depressed.
+
+ECB also continuing aggresive QT therefore reducing liquidity in the euro another big driver for narrowing basis compared to fed's balance sheet the ECB is on a much quicker tightening path 
+
+Like fading dollar overcrowded carry trade and Fed argubaly too hawkish 
+
